@@ -33,7 +33,7 @@ header {
 
         #icons-content{
             display:flex;
-
+            align-items: center;
         }
         
         .img-content{
@@ -42,6 +42,25 @@ header {
             border-radius: 50%;
             margin: 0 10px;
         }
+
+        #coins{
+            background-color: darkred;
+            width: 60px;
+            height: 30px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+        }
+
+            #coins img{
+                width: 30px;
+            }
+
+            #coins h3{
+                margin-right: 10px;
+            }
 
         nav img {
             width:100%;
