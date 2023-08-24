@@ -10,124 +10,193 @@ header {
     width: 100vw;
     height: 100vh;
 }
-    /*Navbar*/
-    nav{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        height: 70px;
-        background-color: rgb(0, 0, 0);
-        padding: 0 15px;
-        position: relative;
+/*Navbar*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: white(0, 0, 0);
+    padding: 0 15px;
+    position: relative;
+    border-bottom: solid 1px #bbb; 
+}
 
-    }
+/*Name title*/
+#name-title{
+    color: black;
+}
 
-        #name-title{
-            color: white;
-        }
+#name-title span{
+    color: darkred;
+}
 
-            #name-title span{
-                color: darkred;
-            }
+/*Navbar icons*/
+#icons-content{
+    display:flex;
+    align-items: center;
+}
 
-        #icons-content{
-            display:flex;
-            align-items: center;
-        }
-        
-        .img-content{
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            margin: 0 10px;
-            cursor: pointer;
-        }
+.img-content{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+}
 
-        .img-content:hover{
-            filter: grayscale(50%)
-        }
+.img-content:hover{
+    filter: grayscale(50%)
+}
 
-        #coins{
-            background-color: darkred;
-            width: 60px;
-            height: 30px;
-            border-radius: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            color: white;
-        }
+nav img {
+    width:100%;
+}
 
-            #coins img{
-                width: 30px;
-            }
+#coins{
+    background-color: darkred;
+    width: 60px;
+    height: 30px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
 
-            #coins h3{
-                margin-right: 10px;
-            }
-        #notification {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+#coins img{
+    width: 30px;
+}
 
-            #notification img{
-                width:30px;
-            }
+#coins h3{
+    padding-right: 10px;
+}
 
-        nav img {
-            width:100%;
-            cursor: pointer;
-        }
+#notification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-            #user-logo #menu-check{
-                display: none;
-            }
+#notification img{
+    width:30px;
+}
 
-            #menu{
-                position: absolute;
-                top: 70px;
-                width: 50vw;
-                height: calc(100vh - 70px);
-                background-color: white;
-                display:flex;
-                justify-content: flex-start;
-                align-items: flex-start;
-                flex-direction: column;
-                transition: right 300ms ease;
-            }
+/*Hidden checkbox*/
+#user-logo #menu-check{
+    display: none;
+}
 
-                #menu ul{
-                    width: 100%;
-                }
+/*User menu*/
+#menu{
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    width: 50vw;
+    height: calc(100vh - 70px);
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    transition: right 300ms ease;
+}
 
-                #menu li{
-                    height: 50px;
-                    width: 100%;
-                    padding-left: 10px;
-                    background-color: white;
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-start;
-                    cursor: pointer;
-                    color: darkred;
-                    transition: all 300ms ease-in-out;
-                    border: solid 1px #cccccc5c;
-                }
+#menu ul{
+    width: 100%;
+}
 
-                #menu li:hover{
-                    background-color: darkred;
-                    color: white;
-                }
+#menu li{
+    height: 50px;
+    width: 100%;
+    padding-left: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    color: darkred;
+    border: solid 1px #ccc;
+}
 
+#menu li:hover{
+    background-color: darkred;
+    color: white;
+}
+
+
+/*Person flag section*/
+#person-section{
+    background-color: #ccc;
+    width: 100%;
+    height: calc(100% - 70px);
+}
     
-    /*Person section*/
-    #person-section{
-        background-color: #ccc;
-        width: 100%;
-        height: calc(100% - 70px);
-        
-    }
-        
+#background {
+    position: relative;
+    background-color: white;
+    width: 100%;
+    height: calc(100% - 30px);
+    top: 30px;
+    border-top: solid 1px #bbb;
+    background-image: url(img/wallpapers/duck-wp.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#user-info{
+    position: absolute;
+    background-color: darkred;
+    top: 50px;
+    left: 50px;
+    width: 250px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-info-item{
+    background-color: white;
+    border: solid 1px;
+    width: 200px;
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#level{
+    height: 50px;
+    justify-content: space-between;
+    padding: 0px 40px;
+}
+
+#photo{
+    height:150px;
+}
+
+#nickname{
+    height: 30px;
+}
+
+#achievement{
+    height: 30px;
+}
+
+#offensive-days{
+    height: 100px;
+    flex-direction: column;
+}
+
+#offensive-days img{
+    background-color: #ccc;
+    border: solid 1px black;
+    width: 150px;
+    height: 60px;
+}
+
 
