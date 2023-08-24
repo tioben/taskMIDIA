@@ -41,6 +41,11 @@ header {
             height: 50px;
             border-radius: 50%;
             margin: 0 10px;
+            cursor: pointer;
+        }
+
+        .img-content:hover{
+            filter: grayscale(50%)
         }
 
         #coins{
@@ -60,6 +65,15 @@ header {
 
             #coins h3{
                 margin-right: 10px;
+            }
+        #notification {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            #notification img{
+                width:30px;
             }
 
         nav img {
