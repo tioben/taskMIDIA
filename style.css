@@ -101,6 +101,7 @@ nav img {
     align-items: flex-start;
     flex-direction: column;
     transition: right 300ms ease;
+    z-index: 6;
 }
 
 #menu ul{
